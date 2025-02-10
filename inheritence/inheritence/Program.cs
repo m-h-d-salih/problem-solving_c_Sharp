@@ -7,6 +7,15 @@
            Calculate    calculate = new Calculate();
             Console.WriteLine(calculate.sum(10));
             calculate.Hello();
+            bool b = false;
+            if (b)
+            {
+                Console.WriteLine("true");
+
+            }else if (!b)
+            {
+                Console.WriteLine("false");
+            }
         }
     }
     public interface Ihello
