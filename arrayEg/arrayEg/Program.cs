@@ -24,6 +24,9 @@
             Console.WriteLine(string.Join(", ",s));
             var s1 = b.FirstOrDefault(n => n == "pagani");
             Console.WriteLine(s1);
+            Console.WriteLine(string.Join(" ", a));
+            string msg = "hello world ";
+            Console.WriteLine(string.Join(" ",msg.Split(" ")));
         }
     }
 }
