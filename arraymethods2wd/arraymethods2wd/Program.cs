@@ -5,11 +5,12 @@
         static void Main(string[] args)
         {
             int[] arr= { 11, 2, 13 ,4};
-            foreach (int i in arr) { 
+            string[] s = { "hello", "hii", "abs", "bn" }; 
+            foreach (string i in s) { 
             Console.WriteLine(i);
             }
-            Array.Sort(arr);
-            foreach (int i in arr)
+            Array.Sort(s);
+            foreach (string i in s)
             {
                 Console.WriteLine(i);
             }
