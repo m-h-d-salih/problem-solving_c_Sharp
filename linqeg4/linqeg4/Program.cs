@@ -14,7 +14,7 @@
                     where n % 2 == 0
                     select n;
             Console.WriteLine(String.Join(", ", a));
-            int[] arr = { 1, 2, 3,4,5};
+            int[] arr = { 1, 2, 3,4,5,6,7,8,9};
             list.Clear();
             foreach(int x in arr)
             {
@@ -23,6 +23,11 @@
             }
             var sorted= list.OrderByDescending(x=>x);
             Console.WriteLine(String.Join(", ",sorted));
+            var grouped=numbers.GroupBy(x=>x%2==0?"even":"odd");
+            foreach(var x in grouped)
+            {
+                Console.WriteLine($"{x.Key} : {String.Join(", ",x)}");
+            }
         }
     }
 }
