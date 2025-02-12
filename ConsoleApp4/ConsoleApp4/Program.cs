@@ -19,6 +19,14 @@
             {
                 Console.WriteLine(emp.Name+" = "+emp.Salary );
             }
+            //var ordering=from emp in list
+            //             orderby emp.Salary
+            //             select emp;
+            var ordering = list.OrderBy(e => e.Salary);
+            foreach (var emp in ordering)
+            {
+                Console.WriteLine(emp.Name + " = " + emp.Salary);
+            }
         }
     }
     public class Employee
